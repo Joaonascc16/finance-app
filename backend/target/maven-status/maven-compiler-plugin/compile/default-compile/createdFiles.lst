@@ -1,0 +1,17 @@
+com\financeapp\dto\CategoryDTO$CategoryDTOBuilder.class
+com\financeapp\entity\Category$CategoryBuilder.class
+com\financeapp\entity\Transaction.class
+com\financeapp\service\CategoryService.class
+com\financeapp\dto\TransactionDTO$TransactionDTOBuilder.class
+com\financeapp\controller\CategoryController.class
+com\financeapp\dto\CategoryDTO.class
+com\financeapp\repository\CategoryRepository.class
+com\financeapp\FinanceAppApplication.class
+com\financeapp\entity\TransactionType.class
+com\financeapp\controller\TransactionController.class
+com\financeapp\dto\TransactionDTO.class
+com\financeapp\entity\Category.class
+com\financeapp\entity\CategoryType.class
+com\financeapp\service\TransactionService.class
+com\financeapp\entity\Transaction$TransactionBuilder.class
+com\financeapp\repository\TransactionRepository.class

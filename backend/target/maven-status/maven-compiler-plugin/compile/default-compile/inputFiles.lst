@@ -1,0 +1,13 @@
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\controller\CategoryController.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\controller\TransactionController.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\dto\CategoryDTO.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\dto\TransactionDTO.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\entity\Category.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\entity\CategoryType.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\entity\Transaction.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\entity\TransactionType.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\FinanceAppApplication.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\repository\CategoryRepository.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\repository\TransactionRepository.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\service\CategoryService.java
+C:\Users\joaon\Downloads\FinanceApp-Web-Maven\backend\src\main\java\com\financeapp\service\TransactionService.java
