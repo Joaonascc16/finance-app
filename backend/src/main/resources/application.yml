@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: FinanceApp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/financeapp
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+  mvc:
+    cors:
+      allowed-origins: "http://localhost:5173,http://localhost:3000"
+      allowed-methods: "*"
+      allowed-headers: "*"
+      allow-credentials: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    com.financeapp: DEBUG

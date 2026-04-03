@@ -1,0 +1,104 @@
+{
+  "name": "financeapp-desktop",
+  "version": "1.0.0",
+  "description": "FinanceApp - Gerenciador Financeiro Desktop",
+  "main": "main.js",
+  "homepage": "./",
+  "author": "FinanceApp Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "build": "npm run react-build && electron-builder",
+    "build-win": "npm run react-build && electron-builder --win",
+    "build-msi": "npm run react-build && electron-builder --win msi",
+    "build-nsis": "npm run react-build && electron-builder --win nsis",
+    "build-arm64": "npm run react-build && electron-builder --win --arm64",
+    "build-portable-arm64": "npm run react-build && electron-builder --win portable --arm64",
+    "build-mac": "npm run react-build && electron-builder --mac",
+    "build-linux": "npm run react-build && electron-builder --linux",
+    "build-all": "npm run react-build && electron-builder -mwl"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^latest",
+    "electron-builder": "^24.6.4",
+    "wait-on": "^7.0.1"
+  },
+  "build": {
+    "appId": "com.financeapp.desktop",
+    "productName": "FinanceApp",
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": [
+        "msi",
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico",
+      "certificateFile": null,
+      "certificatePassword": null,
+      "signingHashAlgorithms": [
+        "sha256"
+      ],
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "msi": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "FinanceApp",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico",
+      "artifactName": "${productName}-${version}-${arch}.msi"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "FinanceApp",
+      "artifactName": "${productName}-${version}-${arch}.exe"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.finance"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
+      "category": "Finance"
+    },
+    "arm64": {
+      "target": [
+        "msi",
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    }
+  }
+}

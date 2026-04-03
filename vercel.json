@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
+  "env": {
+    "REACT_APP_VERSION": "@1.0.0"
+  },
+  "routes": [
+    {
+      "src": "/[^.]+$",
+      "destination": "/index.html"
+    }
+  ]
+}
